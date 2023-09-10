@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24sp"
+    tools:context=".Register">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Page"
+        android:background="@null"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="50dp"
+        />
+
+    <EditText
+        android:id="@+id/nameReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="name"
+        android:maxLines="1"
+        android:inputType="text"
+        android:layout_marginBottom="30dp"
+        android:background="@null"
+        android:hint="Enter Name"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/emailReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="emailAddress"
+        android:maxLines="1"
+        android:inputType="text"
+        android:layout_marginBottom="30dp"
+        android:background="@null"
+        android:hint="Enter Email"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/passwordReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_marginBottom="30dp"
+        android:background="@null"
+        android:hint="Enter Password"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/genderReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="text"
+        android:layout_marginBottom="30dp"
+        android:background="@null"
+        android:hint="Enter Gender"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="registerUser"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Register" />
+
+</LinearLayout>
